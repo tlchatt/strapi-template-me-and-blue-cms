@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nav_entries",
+  "info": {
+    "name": "NavEntry",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "page": {
+      "model": "page"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "page",
+        "link"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "sub_nav_entries": {
+      "collection": "sub-nav-entry"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MetaTitle": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "OnSiteTitle": {
+      "type": "string"
+    },
+    "NavTitle": {
+      "type": "string"
+    },
+    "OGImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "IsArticle": {
+      "type": "boolean"
+    },
+    "IsWebPage": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "name": "HomePage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MetaTitle": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "text"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "OnSiteTitle": {
+      "type": "string"
+    },
+    "NavTitle": {
+      "type": "string"
+    },
+    "HeroImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "isOrg": {
+      "type": "boolean"
+    },
+    "isLocalBiz": {
+      "type": "boolean"
+    },
+    "isLegal": {
+      "type": "boolean"
+    }
+  }
+}

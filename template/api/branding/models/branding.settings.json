@@ -1,0 +1,85 @@
+{
+  "kind": "singleType",
+  "collectionName": "brandings",
+  "info": {
+    "name": "Branding",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SiteTitle": {
+      "type": "string"
+    },
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "Pinterest": {
+      "type": "string"
+    },
+    "YouTube": {
+      "type": "string"
+    },
+    "Google": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "GoogleMapsEmbed": {
+      "type": "text"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Author": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "StreetAddress": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "PostalCode": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "AnalyticsTag": {
+      "type": "string"
+    },
+    "displayEmail": {
+      "type": "string"
+    }
+  }
+}

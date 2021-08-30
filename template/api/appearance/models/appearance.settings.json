@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "appearances",
+  "info": {
+    "name": "Appearance",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FixedSideNav": {
+      "type": "boolean"
+    }
+  }
+}

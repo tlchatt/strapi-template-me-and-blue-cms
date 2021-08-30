@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_rolls",
+  "info": {
+    "name": "BlogRoll",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BlogRollFeature": {
+      "type": "boolean"
+    },
+    "MetaTitle": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "OnSiteTitle": {
+      "type": "string"
+    },
+    "NavTitle": {
+      "type": "string"
+    },
+    "OGImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

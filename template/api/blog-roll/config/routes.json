@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blog-roll",
+      "handler": "blog-roll.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blog-roll",
+      "handler": "blog-roll.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blog-roll",
+      "handler": "blog-roll.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

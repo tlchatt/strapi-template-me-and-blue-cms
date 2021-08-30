@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_nav_entries",
+  "info": {
+    "name": "SubNavEntry",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "page": {
+      "model": "page"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "page",
+        "link"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "position": {
+      "type": "integer"
+    }
+  }
+}
