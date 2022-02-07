@@ -19,7 +19,7 @@
       "type": "text"
     },
     "Description": {
-      "type": "string"
+      "type": "text"
     },
     "Url": {
       "type": "string"
@@ -47,6 +47,18 @@
     },
     "IsWebPage": {
       "type": "boolean"
+    },
+    "datePublished": {
+      "type": "datetime"
+    },
+    "OnBlogRoll": {
+      "type": "boolean"
+    },
+    "Layout": {
+      "type": "json"
+    },
+    "categories": {
+      "collection": "category"
     }
   }
 }

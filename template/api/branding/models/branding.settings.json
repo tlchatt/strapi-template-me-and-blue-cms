@@ -16,7 +16,7 @@
       "type": "string"
     },
     "logo": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -78,8 +78,11 @@
     "AnalyticsTag": {
       "type": "string"
     },
-    "displayEmail": {
+    "DisplayEmail": {
       "type": "string"
+    },
+    "Pixel": {
+      "type": "text"
     }
   }
 }

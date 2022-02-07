@@ -15,7 +15,7 @@
       "type": "string"
     },
     "Content": {
-      "type": "text"
+      "type": "string"
     },
     "Images": {
       "collection": "file",

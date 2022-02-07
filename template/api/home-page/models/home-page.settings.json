@@ -1,6 +1,6 @@
 {
   "kind": "singleType",
-  "collectionName": "home_pages",
+  "collectionName": "home_page",
   "info": {
     "name": "HomePage",
     "description": ""
@@ -16,7 +16,7 @@
       "type": "string"
     },
     "Description": {
-      "type": "string"
+      "type": "text"
     },
     "Content": {
       "type": "text"
@@ -31,7 +31,7 @@
       "type": "string"
     },
     "HeroImage": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -50,6 +50,15 @@
     },
     "isLegal": {
       "type": "boolean"
+    },
+    "Layout": {
+      "type": "json"
+    },
+    "Content2": {
+      "type": "text"
+    },
+    "Content3": {
+      "type": "text"
     }
   }
 }
